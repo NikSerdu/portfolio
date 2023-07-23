@@ -20,7 +20,7 @@ const Home: FC = () => {
             <p className="text-red ">frontend developer</p>
           </div>
           <p className="text-xl mt-3">
-            It's good when work intersects with hobbies.
+            It&#39;s good when work intersects with hobbies.
           </p>
         </div>
         <div className="mt-10  hover:cursor-pointer ">

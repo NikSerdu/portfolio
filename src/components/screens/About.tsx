@@ -38,7 +38,8 @@ const aboutData = [
           Entered the TOP 10 at the Crimeweb 2022 Web Programming Olympiad
         </li>
         <li>
-          Took 3rd place in the International English Language Olympiad "Ermak"
+          Took 3rd place in the International English Language Olympiad
+          &#34;Ermak&#34;
         </li>
       </ul>
     ),
@@ -49,8 +50,8 @@ const aboutData = [
     content: (
       <div>
         <p>
-          Higher education in the specialty "Software Engineering" of the
-          V.I.Vernadsky KFU
+          Higher education in the specialty &#34;Software Engineering&#34; of
+          the V.I.Vernadsky KFU
         </p>
       </div>
     ),
