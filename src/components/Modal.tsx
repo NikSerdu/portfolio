@@ -5,7 +5,7 @@ import Button from "@mui/material/Button";
 import Fade from "@mui/material/Fade";
 import Modal from "@mui/material/Modal";
 import Typography from "@mui/material/Typography";
-import { useState } from "react";
+import { FC, PropsWithChildren, ReactNode, useState } from "react";
 
 const style = {
   position: "absolute" as "absolute",
@@ -20,7 +20,10 @@ const style = {
   borderRadius: 5,
 };
 
-export default function BasicModal({ openBtn, children }) {
+const BasicModal: FC<PropsWithChildren<{ openBtn: ReactNode }>> = ({
+  openBtn,
+  children,
+}) => {
   const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
@@ -56,4 +59,5 @@ export default function BasicModal({ openBtn, children }) {
       </Modal>
     </div>
   );
-}
+};
+export default BasicModal;
