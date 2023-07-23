@@ -11,11 +11,11 @@ import {
   HiViewGrid,
 } from "react-icons/hi";
 const icons = [
-  { name: "Home", path: "/", icon: <HiHome /> },
-  { name: "About", path: "/about", icon: <HiUser /> },
-  { name: "Services", path: "/services", icon: <HiViewGrid /> },
-  { name: "Works", path: "/works", icon: <HiViewBoards /> },
-  { name: "Contacts", path: "/contacts", icon: <HiMail /> },
+  { id: 0, name: "Home", path: "/", icon: <HiHome /> },
+  { id: 1, name: "About", path: "/about", icon: <HiUser /> },
+  { id: 2, name: "Services", path: "/services", icon: <HiViewGrid /> },
+  { id: 3, name: "Works", path: "/works", icon: <HiViewBoards /> },
+  { id: 5, name: "Contacts", path: "/contacts", icon: <HiMail /> },
 ];
 
 const Navbar: FC = () => {
@@ -26,6 +26,7 @@ const Navbar: FC = () => {
       {icons.map((item) => {
         return (
           <Link
+            key={item.id}
             href={item.path}
             className={cn("p-2", {
               "text-red": item.path === pathname,

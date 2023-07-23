@@ -71,7 +71,8 @@ const Works: FC = () => {
             {worksData.map((item) => {
               return (
                 <BasicModal
-                  openBtn={<WorkItem key={item.id} imageLink={item.image} />}
+                  key={item.id}
+                  openBtn={<WorkItem imageLink={item.image} />}
                 >
                   <div className="flex gap-4 text-bg">
                     <div className="w-2/3">
@@ -104,7 +105,7 @@ const Works: FC = () => {
                       <p className="font-bold">Stack of technologies:</p>
                       <ul className="">
                         {item.techStack.map((tech) => (
-                          <li>- {tech}</li>
+                          <li key={tech}>- {tech}</li>
                         ))}
                       </ul>
                       {item.githubLink !== "" && (
