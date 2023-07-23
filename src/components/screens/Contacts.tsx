@@ -9,7 +9,7 @@ const Contacts: FC = () => {
       <div className="flex flex-col items-center justify-center mt-44">
         <div className="">
           <h1 className="text-8xl">
-            Let's <span className="text-red">connect</span>
+            Let's <span className="text-red">connect.</span>
           </h1>
         </div>
         <div className="text-3xl mt-5 gap-3">

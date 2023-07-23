@@ -1,32 +1,29 @@
+import Link from "next/link";
 import { FC } from "react";
 import { AiFillGithub } from "react-icons/ai";
-import { PiTelegramLogoLight } from "react-icons/pi";
-import { SlSocialVkontakte } from "react-icons/sl";
-type TypeSocials = {
-  id: number;
-  name: string;
-  link: string;
-};
+import { BiLogoGmail, BiLogoTelegram } from "react-icons/bi";
 
-const socials: TypeSocials[] = [
-  { id: 1, name: "Telegram", link: "" },
-  { id: 2, name: "VK", link: "" },
-  { id: 3, name: "GitHub", link: "" },
+const socials = [
+  { id: 0, icon: <BiLogoTelegram />, link: "https://t.me/nikserdu" },
+  { id: 1, icon: <BiLogoGmail />, link: "mailto:nik.serdu201584@gmail.com" },
+  { id: 2, icon: <AiFillGithub />, link: "https://github.com/NikSerdu" },
 ];
 
 const Social: FC = () => {
   return (
     <>
       <ul className="flex gap-8 text-3xl text-white">
-        <li className="hover:cursor-pointer">
-          <PiTelegramLogoLight />
-        </li>
-        <li className="hover:cursor-pointer">
-          <SlSocialVkontakte />
-        </li>
-        <li className="hover:cursor-pointer">
-          <AiFillGithub />
-        </li>
+        {socials.map((item) => {
+          return (
+            <Link
+              href={item.link}
+              className="hover:cursor-pointer"
+              key={item.id}
+            >
+              {item.icon}
+            </Link>
+          );
+        })}
       </ul>
     </>
   );

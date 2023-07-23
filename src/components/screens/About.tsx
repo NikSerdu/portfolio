@@ -35,10 +35,10 @@ const aboutData = [
     content: (
       <ul className="list-disc">
         <li>
-          Вошёл в ТОП-10 на олимпиаде по web-программироваю CrimeaWeb 2022
+          Entered the TOP 10 at the Crimeweb 2022 Web Programming Olympiad
         </li>
         <li>
-          Занял 3 место в международной олимпиаде по анлийскому языку "Ермак"
+          Took 3rd place in the International English Language Olympiad "Ermak"
         </li>
       </ul>
     ),
@@ -49,8 +49,8 @@ const aboutData = [
     content: (
       <div>
         <p>
-          Высшее образование по специальности "Программная инженерия" КФУ
-          им.В.И.Вернадского
+          Higher education in the specialty "Software Engineering" of the
+          V.I.Vernadsky KFU
         </p>
       </div>
     ),
@@ -63,12 +63,14 @@ const About: FC = () => {
       <div className="flex gap-20 mt-44">
         <div className="max-w-2xl">
           <div className="font-bold text-7xl">
-            Lorem ipsum <span className="text-red">dolor</span> sit amet.
+            About <span className="text-red">me.</span>
           </div>
           <div className="text-lg leading-10">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae
-            natus quo ipsa eveniet tenetur molestiae quaerat unde facilis
-            quisquam rem.
+            I have been engaged in web development for 1.5 years. The main
+            direction is frontend, but there is also experience with backend
+            (Nest.js, Prisma, familiar with JWT authorization). At the moment I
+            am studying in the IT direction. There is also knowledge in the
+            field of computer networks, configuring Cisco equipment.
           </div>
         </div>
         <div className="w-[480px]">

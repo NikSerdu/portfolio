@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Navbar from "@/components/Navbar";
+import TopLeftImg from "@/components/TopLeftImg";
 import Transition from "@/components/Transition";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
@@ -21,6 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="font-sora  bg-bg text-white">
+        <TopLeftImg />
         <Image
           src={"/home-bg.jpg"}
           alt="Home bg"
