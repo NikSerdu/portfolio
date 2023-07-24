@@ -6,7 +6,7 @@ const TopLeftImg: FC = () => {
     <div className="absolute left-0 top-0 mix-blend-color-dodge -z-10">
       <Image
         alt="Top left image"
-        src={"/top-left-img.png"}
+        src={"/portfolio/top-left-img.png"}
         width={405}
         height={411}
       />
