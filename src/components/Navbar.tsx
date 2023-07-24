@@ -29,8 +29,7 @@ const Navbar: FC = () => {
             key={item.id}
             href={item.path}
             className={cn("p-2", {
-              "text-red":
-                `/portfolio${item.path}` === pathname || item.path === pathname,
+              "text-red": item.path === pathname,
             })}
           >
             {item.icon}

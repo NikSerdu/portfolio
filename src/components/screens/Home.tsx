@@ -7,7 +7,7 @@ const Home: FC = () => {
   return (
     <div className="mt-40 ">
       <Image
-        src={"/portfolio/right-bottom-img.png"}
+        src={"/right-bottom-img.png"}
         alt="Home bg"
         width={1439}
         height={847}
@@ -30,7 +30,7 @@ const Home: FC = () => {
           >
             <Image
               alt="My projects"
-              src={"/portfolio/my-projects.svg"}
+              src={"/my-projects.svg"}
               width={313}
               height={313}
               className="animate-spin-slow h-full w-full"

@@ -24,7 +24,7 @@ export default function RootLayout({
       <body className="font-sora  bg-bg text-white">
         <TopLeftImg />
         <Image
-          src={"/portfolio/home-bg.jpg"}
+          src={"/home-bg.jpg"}
           alt="Home bg"
           width={1920}
           height={1080}
