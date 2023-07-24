@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import Link from "next/link";
 import { FC } from "react";
 import { AiFillGithub } from "react-icons/ai";
 import { Carousel } from "react-responsive-carousel";
@@ -109,10 +108,14 @@ const Works: FC = () => {
                         ))}
                       </ul>
                       {item.githubLink !== "" && (
-                        <Link href={item.githubLink} className="flex gap-2">
+                        <a
+                          href={item.githubLink}
+                          className="flex gap-2"
+                          target="_blank"
+                        >
                           <span className="font-bold">Github: </span>
                           <AiFillGithub className="text-3xl" />
-                        </Link>
+                        </a>
                       )}
                     </div>
                   </div>
