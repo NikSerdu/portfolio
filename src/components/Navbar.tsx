@@ -11,7 +11,7 @@ import {
   HiViewGrid,
 } from "react-icons/hi";
 const icons = [
-  { id: 0, name: "Home", path: "/home", icon: <HiHome /> },
+  { id: 0, name: "Home", path: "/", icon: <HiHome /> },
   { id: 1, name: "About", path: "/about", icon: <HiUser /> },
   { id: 2, name: "Services", path: "/services", icon: <HiViewGrid /> },
   { id: 3, name: "Works", path: "/works", icon: <HiViewBoards /> },
