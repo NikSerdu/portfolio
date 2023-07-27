@@ -11,10 +11,10 @@ const Home: FC = () => {
         alt="Home bg"
         width={1439}
         height={847}
-        className="mix-blend-color-dodge absolute bottom-0 right-0 -z-10"
+        className="mix-blend-color-dodge absolute max-[760px]:hidden bottom-0 right-0 -z-10"
       />
       <Container>
-        <div className=" text-white max-w-2xl">
+        <div className=" text-white max-w-2xl max-[760px]:text-center">
           <div className="text-6xl font-bold">
             <p>Nikolay Serduchenko</p>
             <p className="text-red ">frontend developer</p>
@@ -26,7 +26,7 @@ const Home: FC = () => {
         <div className="mt-10  hover:cursor-pointer ">
           <Link
             href={"/works"}
-            className="relative w-56 h-56 flex justify-center items-center"
+            className="relative w-56 h-56 flex justify-center items-center max-[760px]:mx-auto"
           >
             <Image
               alt="My projects"

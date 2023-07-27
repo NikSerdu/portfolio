@@ -29,8 +29,8 @@ const Services: FC = () => {
   return (
     <div>
       <Container>
-        <div className="flex gap-10 items-center mt-44">
-          <div className="w-1/2">
+        <div className="flex gap-10 items-center mt-44 max-[1500px]:mt-3 max-[1500px]:flex-col max-[1500px]:text-center">
+          <div className="w-1/2 max-[750px]:w-full">
             <h1 className="text-6xl font-bold">
               My <span className="text-red">services.</span>
             </h1>
@@ -39,12 +39,12 @@ const Services: FC = () => {
               me.
             </p>
           </div>
-          <div className="flex items-center gap-5">
+          <div className="flex items-center gap-5 max-[820px]:flex-wrap justify-center">
             {servicesData.map((item) => {
               return (
                 <Link
                   href={"/contacts"}
-                  className="bg-gr flex flex-col w-[200px] h-[300px] justify-between p-4 rounded-xl hover:cursor-pointer hover:scale-[103%] transition-all"
+                  className="max-[820px]:w-1/3 max-[600px]:w-[80%] bg-gr flex flex-col w-[200px] h-[300px] justify-between p-4 rounded-xl hover:cursor-pointer hover:scale-[103%] transition-all"
                   key={item.id}
                 >
                   <div className="text-red text-5xl">{item.icon}</div>

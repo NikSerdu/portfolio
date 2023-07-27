@@ -17,7 +17,7 @@ const aboutData = [
     id: 0,
     name: "Skills",
     content: (
-      <div className="flex gap-4 text-5xl">
+      <div className="flex gap-4 text-5xl flex-wrap max-[1025px]:justify-center">
         <BiLogoHtml5 />
         <BiLogoCss3 />
         <BiLogoJavascript />
@@ -33,12 +33,12 @@ const aboutData = [
     id: 1,
     name: "Awards",
     content: (
-      <ul className="list-disc">
+      <ul className="">
         <li>
-          Entered the TOP 10 at the Crimeweb 2022 Web Programming Olympiad
+          &#62; Entered the TOP 10 at the Crimeweb 2022 Web Programming Olympiad
         </li>
         <li>
-          Took 3rd place in the International English Language Olympiad
+          &#62; Took 3rd place in the International English Language Olympiad
           &#34;Ermak&#34;
         </li>
       </ul>
@@ -61,8 +61,8 @@ const About: FC = () => {
   const [aboutIndex, setAboutIndex] = useState(0);
   return (
     <Container>
-      <div className="flex gap-20 mt-44">
-        <div className="max-w-2xl">
+      <div className="flex gap-20 mt-28 max-[1025px]:flex-col max-[1025px]:justify-center">
+        <div className="w-2/5 max-[1025px]:w-full max-[1025px]:text-center">
           <div className="font-bold text-7xl">
             About <span className="text-red">me.</span>
           </div>
@@ -74,8 +74,8 @@ const About: FC = () => {
             field of computer networks, configuring Cisco equipment.
           </div>
         </div>
-        <div className="w-[480px]">
-          <div className="flex gap-10 text-xl">
+        <div className="w-3/5 max-[1025px]:w-full">
+          <div className="flex gap-10 text-xl max-[1025px]:justify-center">
             {aboutData.map((item) => {
               return (
                 <div

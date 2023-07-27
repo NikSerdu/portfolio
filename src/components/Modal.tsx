@@ -12,7 +12,9 @@ const style = {
   top: "50%",
   left: "50%",
   transform: "translate(-50%, -50%)",
-  width: 1000,
+  width: "100%",
+  padding: 4,
+  overflow: "visible",
   bgcolor: "#b835f4",
   border: "2px solid #000",
   boxShadow: 24,
@@ -29,9 +31,10 @@ const BasicModal: FC<PropsWithChildren<{ openBtn: ReactNode }>> = ({
   const handleClose = () => setOpen(false);
 
   return (
-    <div>
+    <div className="">
       <Button onClick={handleOpen}>{openBtn}</Button>
       <Modal
+        className=""
         aria-labelledby="transition-modal-title"
         aria-describedby="transition-modal-description"
         open={open}

@@ -57,8 +57,8 @@ const Works: FC = () => {
   return (
     <div>
       <Container>
-        <div className="flex gap-10 items-center mt-28">
-          <div className="w-1/3">
+        <div className="flex gap-10 items-center mt-28 max-[1050px]:flex-col">
+          <div className="w-1/3 max-[1200px]:w-1/4 text-center max-[800px]:w-full">
             <h1 className="text-6xl font-bold">
               My <span className="text-red">works.</span>
             </h1>
@@ -66,34 +66,35 @@ const Works: FC = () => {
               Here are some of my recent works.
             </p>
           </div>
-          <div className="grid grid-cols-2 gap-4">
+          <div className="flex flex-wrap gap-4 max-[775px]:flex-col  justify-center">
             {worksData.map((item) => {
               return (
                 <BasicModal
                   key={item.id}
                   openBtn={<WorkItem imageLink={item.image} />}
                 >
-                  <div className="flex gap-4 text-bg">
-                    <div className="w-2/3">
+                  <div className="flex gap-4 text-bg max-[1050px]:flex-col">
+                    <div className="w-2/3 max-[1050px]:w-full">
                       <Carousel
                         showStatus={false}
                         showThumbs={false}
                         dynamicHeight={true}
                       >
                         {item.gallery.map((img) => (
-                          <div className="" key={img}>
+                          <div className="max-[1050px]:w-full" key={img}>
                             <Image
                               src={img}
                               width={350}
                               height={250}
                               alt="Test"
+                              className=" hover:scale-150 transition-all"
                             />
                           </div>
                         ))}
                       </Carousel>
                     </div>
 
-                    <div className="p-4 w-1/3">
+                    <div className="p-4 w-1/3 max-[1050px]:w-full max-[1050px]:text-lg">
                       <h2>
                         <span className="font-bold">Title:</span> {item.title}
                       </h2>
