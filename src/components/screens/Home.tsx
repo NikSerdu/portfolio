@@ -5,7 +5,7 @@ import { FaLongArrowAltRight } from "react-icons/fa";
 import Container from "../Container";
 const Home: FC = () => {
   return (
-    <div className="mt-40 ">
+    <div className="mt-28">
       <Image
         src={"/right-bottom-img.png"}
         alt="Home bg"
@@ -26,7 +26,7 @@ const Home: FC = () => {
         <div className="mt-10  hover:cursor-pointer ">
           <Link
             href={"/works"}
-            className="relative w-56 h-56 flex justify-center items-center max-[760px]:mx-auto"
+            className="relative w-40 h-40 flex justify-center items-center max-[760px]:mx-auto"
           >
             <Image
               alt="My projects"

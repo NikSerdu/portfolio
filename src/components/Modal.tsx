@@ -6,13 +6,14 @@ import Fade from "@mui/material/Fade";
 import Modal from "@mui/material/Modal";
 import Typography from "@mui/material/Typography";
 import { FC, PropsWithChildren, ReactNode, useState } from "react";
-
+import { GrClose } from "react-icons/gr";
 const style = {
   position: "absolute" as "absolute",
   top: "50%",
   left: "50%",
   transform: "translate(-50%, -50%)",
-  width: "100%",
+  width: "99vw",
+  height: "95vh",
   padding: 4,
   overflow: "visible",
   bgcolor: "#b835f4",
@@ -55,6 +56,9 @@ const BasicModal: FC<PropsWithChildren<{ openBtn: ReactNode }>> = ({
               component="h2"
               className="text-red"
             >
+              <div className="flex justify-end mb-2">
+                <GrClose onClick={(prev) => setOpen(!prev)} />
+              </div>
               {children}
             </Typography>
           </Box>

@@ -57,7 +57,7 @@ const Works: FC = () => {
   return (
     <div>
       <Container>
-        <div className="flex gap-10 items-center mt-28 max-[1050px]:flex-col">
+        <div className="flex gap-10 items-center mt-16 max-[1050px]:flex-col">
           <div className="w-1/3 max-[1200px]:w-1/4 text-center max-[800px]:w-full">
             <h1 className="text-6xl font-bold">
               My <span className="text-red">works.</span>
@@ -73,21 +73,21 @@ const Works: FC = () => {
                   key={item.id}
                   openBtn={<WorkItem imageLink={item.image} />}
                 >
-                  <div className="flex gap-4 text-bg max-[1050px]:flex-col">
-                    <div className="w-2/3 max-[1050px]:w-full">
+                  <div className="flex gap-4 text-bg max-[900px]:flex-col max-[900px]:items-center">
+                    <div className="w-2/3 max-[900px]:w-full">
                       <Carousel
                         showStatus={false}
                         showThumbs={false}
                         dynamicHeight={true}
                       >
                         {item.gallery.map((img) => (
-                          <div className="max-[1050px]:w-full" key={img}>
+                          <div className="max-[900px]:w-full" key={img}>
                             <Image
                               src={img}
                               width={350}
                               height={250}
                               alt="Test"
-                              className=" hover:scale-150 transition-all"
+                              className="min-[900px]:h-[85vh] max-[900px]:h-auto"
                             />
                           </div>
                         ))}

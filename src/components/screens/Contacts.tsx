@@ -6,7 +6,7 @@ import Container from "../Container";
 const Contacts: FC = () => {
   return (
     <Container>
-      <div className="flex flex-col items-center justify-center mt-44 max-[625px]:text-center max-[760px]:mt-[10vh]">
+      <div className="flex flex-col items-center justify-center mt-32 max-[625px]:text-center max-[760px]:mt-[10vh]">
         <div className="">
           <h1 className="text-8xl max-[760px]:text-7xl">
             Let&#39;s <span className="text-red">connect.</span>
