@@ -76,7 +76,7 @@ const Works: FC = () => {
         <div className="flex flex-wrap gap-4 max-[775px]:flex-col  justify-center">
           {worksData.map((item) => {
             return (
-              <Link href={`works/${item.id.toString()}`}>
+              <Link href={`works/${item.id.toString()}`} key={item.id}>
                 <WorkItem imageLink={item.image} />
               </Link>
             );
