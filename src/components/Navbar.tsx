@@ -22,14 +22,17 @@ const Navbar: FC = () => {
   const pathname = usePathname();
 
   return (
-    <div className="flex flex-col gap-4 text-white text-3xl bg-white bg-opacity-25 rounded-full fixed right-[2%] min-[760px]:top-[30%] py-2 max-[760px]:bottom-[2%] max-[760px]:left-[2%]  max-[760px]:flex-row justify-center">
+    <div className=" flex flex-col gap-4 text-white text-3xl bg-white bg-opacity-25 rounded-full fixed right-[2%] min-[760px]:top-[30%] py-2 max-[760px]:bottom-[2%] max-[760px]:left-[2%]  max-[760px]:flex-row justify-center">
       {icons.map((item) => {
         return (
           <Link
             key={item.id}
             href={item.path}
             className={cn("p-2", {
-              "text-red": item.path === pathname,
+              "text-red":
+                item.path === pathname ||
+                (pathname.split("/").includes(item.path.slice(1)) &&
+                  item.path !== "/"),
             })}
           >
             {item.icon}

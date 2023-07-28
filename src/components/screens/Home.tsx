@@ -5,7 +5,7 @@ import { FaLongArrowAltRight } from "react-icons/fa";
 import Container from "../Container";
 const Home: FC = () => {
   return (
-    <div className="mt-28">
+    <div className="mt-36">
       <Image
         src={"/right-bottom-img.png"}
         alt="Home bg"

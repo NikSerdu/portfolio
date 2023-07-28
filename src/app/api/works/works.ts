@@ -1,10 +1,3 @@
-"use client";
-import Link from "next/link";
-import { FC } from "react";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import Container from "../Container";
-import WorkItem from "../WorkItem";
-
 export type WorkData = {
   id: number;
   title: string;
@@ -60,31 +53,3 @@ export const worksData: WorkData[] = [
     techStack: ["HTML", "CSS"],
   },
 ];
-
-const Works: FC = () => {
-  return (
-    <Container>
-      <div className="flex gap-10 items-center mt-36 max-[1050px]:flex-col">
-        <div className="w-1/3 max-[1200px]:w-1/4 text-center max-[800px]:w-full">
-          <h1 className="text-6xl font-bold">
-            My <span className="text-red">works.</span>
-          </h1>
-          <p className="text-xl mt-2 leading-10">
-            Here are some of my recent works.
-          </p>
-        </div>
-        <div className="flex flex-wrap gap-4 max-[775px]:flex-col  justify-center">
-          {worksData.map((item) => {
-            return (
-              <Link href={`works/${item.id.toString()}`}>
-                <WorkItem imageLink={item.image} />
-              </Link>
-            );
-          })}
-        </div>
-      </div>
-    </Container>
-  );
-};
-
-export default Works;
