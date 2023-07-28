@@ -61,7 +61,7 @@ const About: FC = () => {
   const [aboutIndex, setAboutIndex] = useState(0);
   return (
     <Container>
-      <div className="flex gap-20 mt-28 max-[1025px]:flex-col max-[1025px]:justify-center">
+      <div className="flex gap-20 mt-36 max-[1025px]:flex-col max-[1025px]:justify-center">
         <div className="w-2/5 max-[1025px]:w-full max-[1025px]:text-center">
           <div className="font-bold text-7xl">
             About <span className="text-red">me.</span>

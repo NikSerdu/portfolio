@@ -29,7 +29,7 @@ const Services: FC = () => {
   return (
     <div>
       <Container>
-        <div className="flex gap-10 items-center mt-44 max-[1500px]:mt-3 max-[1500px]:flex-col max-[1500px]:text-center">
+        <div className="flex gap-10 items-center  min-[1000px]:mt-20 max-[1500px]:flex-col max-[1500px]:text-center">
           <div className="w-1/2 max-[750px]:w-full">
             <h1 className="text-6xl font-bold">
               My <span className="text-red">services.</span>
