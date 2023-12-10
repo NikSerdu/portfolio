@@ -35,7 +35,7 @@ const aboutData = [
     content: (
       <ul className="">
         <li>
-          &#62; Entered the TOP 10 at the Crimeweb 2022 Web Programming Olympiad
+          &#62; Entered the TOP 10 at the CrimeaWeb 2022 Web Programming Olympiad
         </li>
         <li>
           &#62; Took 3rd place in the International English Language Olympiad
